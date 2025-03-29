@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreadLegion Gaming Clan</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #333;
+            padding: 20px 0;
+            text-align: center;
+            z-index: 100;
+        }
+
+        header img {
+            width: 150px;
+            height: auto;
+        }
+
+        .container {
+            padding-top: 100px;
+        }
+
+        .section {
+            margin: 50px 0;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        h1, h2 {
+            color: #ff4444;
+        }
+
+        .team-roster, .recruitment-form {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .team-member {
+            background: #444;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            width: 30%;
+            text-align: center;
+        }
+
+        .recruitment-form input, .recruitment-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            background: #333;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .recruitment-form button {
+            background: #ff4444;
+            border: none;
+            padding: 10px;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            background: #333;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="A_detailed_emblem-style_logo_featuring_a_skull_wea (1).png">
+        <h1>DreadLegion Gaming Clan</h1>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Team Roster Section -->
+        <section class="section team-roster">
+            <h2>Team Roster</h2>
+            <div class="team-member">
+                <h3>General</h3>
+                <p>Top-ranked member.</p>
+            </div>
+            <div class="team-member">
+                <h3>Commander</h3>
+                <p>Mid-level member.</p>
+            </div>
+            <div class="team-member">
+                <h3>Private</h3>
+                <p>New recruit.</p>
+            </div>
+        </section>
+
+        <!-- Recruitment Section -->
+        <section class="section recruitment-form">
+            <h2>Join Us</h2>
+            <form action="submit_form.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Why do you want to join?" required></textarea>
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 DreadLegion Gaming Clan | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
